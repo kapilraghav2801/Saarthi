@@ -1,0 +1,54 @@
+{
+    "manifest_version": 3,
+
+    "name": "Saarthi",
+
+    "version": "0.2.2",
+
+    "description":
+        "Hinglish-first AI browser assistant",
+
+    "permissions": [
+        "tabs",
+        "storage",
+        "sidePanel"
+    ],
+
+    "host_permissions": [
+        "<all_urls>"
+    ],
+
+    "background": {
+        "service_worker":
+            "background.js"
+    },
+
+    "side_panel": {
+        "default_path":
+            "sidepanel.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+
+            "js": [
+                "content.js"
+            ],
+
+            "css": [
+                "dog.css"
+            ],
+
+            "run_at":
+                "document_idle"
+        }
+    ],
+
+    "action": {
+        "default_title":
+            "Saarthi"
+    }
+}

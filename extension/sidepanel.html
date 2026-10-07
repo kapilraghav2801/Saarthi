@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Saarthi</title>
+
+    <link
+        rel="stylesheet"
+        href="sidepanel.css"
+    >
+
+</head>
+
+<body>
+
+    <main class="panel">
+
+        <!-- ============================= -->
+        <!-- BRAND -->
+        <!-- ============================= -->
+
+        <div class="brand">
+
+            <div class="brand-dog">
+                🐶
+            </div>
+
+            <div>
+
+                <div class="brand-name">
+                    Saarthi
+                </div>
+
+                <div class="brand-subtitle">
+                    Hinglish browser assistant
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- TEXT COMMAND -->
+        <!-- ============================= -->
+
+        <section class="command-card">
+
+            <div class="input-row">
+
+                <input
+                    id="commandInput"
+                    type="text"
+                    placeholder="Type a command..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="sendButton"
+                    class="send-button"
+                    aria-label="Send command"
+                >
+                    ➤
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- VOICE -->
+        <!-- ============================= -->
+
+        <section class="voice-card">
+
+            <button
+                id="micButton"
+                class="mic-button"
+                aria-label="Start listening"
+            >
+                🎙️
+            </button>
+
+            <div
+                id="status"
+                class="status"
+            >
+                Tap to speak
+            </div>
+
+            <div
+                id="transcript"
+                class="transcript"
+            >
+                Say something...
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="sidepanel.js"></script>
+
+</body>
+
+</html>
